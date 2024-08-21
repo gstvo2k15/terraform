@@ -11,6 +11,7 @@ override.tf.json            # Override files in JSON format
 *_override.tf.json          # More specific override files in JSON format
 .terraformrc                # Terraform CLI configuration file
 terraform.rc                # Terraform CLI configuration file
+virtualbox.box
 
 # Exclude any sensitive information that might be stored in environment files
 .env
