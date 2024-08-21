@@ -1,0 +1,60 @@
+# Terraform-specific files (non excluded basic files for this example)
+##.terraform/                 # Terraform working directory
+##*.tfstate                   # State files
+##*.tfstate.*                 # State files with additional extensions
+##*.tfvars                    # Variables files, usually containing sensitive data
+##*.tfvars.json               # JSON variables files
+crash.log                   # Crash log files
+override.tf                 # Override files, not meant to be versioned
+override.tf.json            # Override files in JSON format
+*_override.tf               # More specific override files
+*_override.tf.json          # More specific override files in JSON format
+.terraformrc                # Terraform CLI configuration file
+terraform.rc                # Terraform CLI configuration file
+
+# Exclude any sensitive information that might be stored in environment files
+.env
+.env.*
+
+# General git files
+.DS_Store                   # macOS files
+Thumbs.db                   # Windows thumbnail cache
+desktop.ini                 # Windows file used for folder configurations
+.vscode/                    # Visual Studio Code workspace settings
+.idea/                      # JetBrains IDEs project files (e.g., IntelliJ IDEA)
+*.iml                       # IntelliJ IDEA module files
+*.log                       # Log files
+*.swp                       # Swap files created by text editors
+*.swo                       # Swap files created by text editors
+
+# Node.js / JavaScript dependencies
+node_modules/               # Node.js dependencies
+
+# Python specific
+__pycache__/                # Python cache files
+*.py[cod]                   # Compiled Python files
+*.pyo                       # Python optimized files
+*.pyd                       # Python DLLs
+venv/                       # Python virtual environments
+
+# Ruby specific
+*.gem                       # RubyGem package files
+*.rbc                       # Compiled Ruby files
+.rvm/                       # Ruby environment files
+.rbenv/                     # Ruby environment files
+.bundle/                    # Bundler settings
+vendor/bundle/              # Bundled gems
+log/                        # Log files
+tmp/                        # Temporary files
+
+# Go specific
+*.exe                       # Executable files
+*.exe~                      # Temporary executables
+*.out                       # Compiled binary files
+*.test                      # Test binaries
+
+# Java specific
+*.class                     # Java class files
+*.jar                       # Java JAR files
+*.war                       # Java WAR files
+*.ear                       # Java EAR files
